@@ -1,0 +1,329 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.psarfw-main-box {
+    --primary-color: #0073AA;
+    --green-color: #34A853;
+    --cta-color: #F39C12;
+
+    margin: 20px;
+    background: #fff;
+
+    .text-align-start {
+        text-align:start;
+    }
+    .text-align-center {
+        text-align: center;
+    }
+    .text-align-end {
+        text-align: end;
+    }
+    .align-items-center {
+        align-items:center;
+    }
+    .psarfw-wrap-row {
+        display: flex;
+        flex-wrap: wrap;
+
+        .psarfw-col-lg-1 {
+            flex: 0 0 auto;
+            width: 8.3333333333%;
+        }
+        .psarfw-col-lg-2 {
+            flex: 0 0 auto;
+            width: 16.6666666667%;
+        }
+        .psarfw-col-lg-3 {
+            flex: 0 0 auto;
+            width: 25%;
+        }
+        .psarfw-col-lg-4 {
+            flex: 0 0 auto;
+            width: 33.3333333333%;
+        }
+        .psarfw-col-lg-5 {
+            flex: 0 0 auto;
+            width: 41.6666666667%;
+        }
+        .psarfw-col-lg-6 {
+            flex: 0 0 auto;
+            width: 50%;
+        }
+        .psarfw-col-lg-7 {
+            flex: 0 0 auto;
+            width: 58.3333333333%;
+        }
+        .psarfw-col-lg-8 {
+            flex: 0 0 auto;
+            width: 66.6666666667%;
+        }
+        .psarfw-col-lg-9 {
+            flex: 0 0 auto;
+            width: 75%;
+        }
+        .psarfw-col-lg-10 {
+            flex: 0 0 auto;
+            width: 83.3333333333%;
+        }
+        .psarfw-col-lg-11 {
+            flex: 0 0 auto;
+            width: 91.6666666667%;
+        }
+        .psarfw-col-lg-12 {
+            flex: 0 0 auto;
+            width: 100%;
+        }
+    }
+    input[type=color], 
+    input[type=date], 
+    input[type=datetime-local], 
+    input[type=datetime], 
+    input[type=email], 
+    input[type=month], 
+    input[type=number], 
+    input[type=password], 
+    input[type=search], 
+    input[type=tel], 
+    input[type=text], 
+    input[type=time], 
+    input[type=url], 
+    input[type=week], 
+    select, textarea {
+        height: 46px;
+        border: 1px solid #e1e1e1;
+        outline: none !important;
+        padding: 0 22px;
+        color: #253D4E;
+        // background: #F8F8FB;
+        -webkit-appearance: none;
+        border-radius: 5px;
+        font-size:16px;
+    }
+    input[type=radio] {
+        width: 20px;
+        height: 20px;
+        min-width: 20px;
+        margin-right: 8px;
+    }
+    input[type=radio]:checked::before {
+        width: 14px;
+        height: 14px;
+        margin: 2px;
+    }
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button {  
+       opacity: 1;
+    }
+    .psarfw-radio-label {
+        font-size: 15px;
+    }
+    .psarfw-header {
+        padding: 10px 20px;
+        background: var(--primary-color);
+
+        h1.psarfw-h1 {
+            color: #fff;
+        }
+    }
+
+    .psarfw-option-section {
+        padding: 20px;
+
+        .psarfw-input-label {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .psarfw-tabbing-option {
+
+            .psarfw-wrap-row {
+                padding: 20px 0;
+            }
+
+            #psarfw_sbp_field_report_time {
+                min-width: 330px;
+            }
+
+            .psarfw_sbp_custom_time {
+                display: none;
+            }
+            .psarfw_sbp_custom_time.show{
+                display: flex;
+            }
+            .psarfw-orders-status-settings,
+            .psarfw-include-products-settings {
+                display: flex;
+                flex-direction: column;
+                row-gap: 12px;
+                font-size: 14px;
+
+                .psarfw-checkbox-input {
+                    padding: 0;
+                    height: initial;
+                    width: initial;
+                    margin-bottom: 0;
+                    display: none;
+                    cursor: pointer;
+
+                    &:checked +.psarfw-checkbox-label:after {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: 4px;
+                        left: 7px;
+                        width: 4px;
+                        height: 9px;
+                        border: solid var(--primary-color);
+                        border-width: 0 2px 2px 0;
+                        transform: rotate(45deg);
+                    }
+                }
+
+                .psarfw-checkbox-label {
+                    position: relative;
+                    cursor: pointer;
+                    font-size: 15px;
+                }
+
+                .psarfw-checkbox-label:before {
+                    content: '';
+                    -webkit-appearance: none;
+                    background-color: transparent;
+                    border: 1px solid var(--primary-color);
+                    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+                    padding: 8px;
+                    display: inline-block;
+                    position: relative;
+                    vertical-align: middle;
+                    cursor: pointer;
+                    margin-right: 8px;
+                }
+
+                .psarfw-checkbox-group {
+                    display: flex;
+                    align-content: center;
+                    align-items: center;
+                }
+            }
+            .psarfw-include-products-settings {
+                .psarfw-pro-id-box input {
+                    width: 450px;
+                }
+            }
+
+
+            .psarfw-product-no-box{
+                flex-direction: row;
+                .psarfw-pro-no-input {
+                    display: inline-block;
+                    width: initial;
+
+                    input{
+                        min-width: unset;
+                        width: 70px;
+                        padding: 0 10px;
+                    }
+                    span {
+                        padding-left: 10px;
+                        font-size: 15px;
+                    }
+                }
+    
+                .psarfw-checkbox-group {
+                    width: auto;
+                    padding-right: 10px;
+
+                }
+            }
+
+            .psarfw-input-child-box {
+                padding-left: 20px;
+            }
+            #psarfw-psr-product-cats {
+                margin: 0;
+            }
+        }
+
+
+        
+    }
+
+    #psarfw-report-table {
+        border-spacing: 0;
+        border-collapse: collapse;
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        tr:hover {
+            background-color: #ededed;
+        }
+
+        thead {
+            tr {
+                th{
+                    background: var(--primary-color);
+                    color: #fff;
+                    padding: 15px 20px;
+                    border: 0.5px solid #ddd;
+                    font-size: 18px;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    font-size: 16px;
+                    text-align: center;
+                    padding: 7px 20px;
+                    border: 1px solid #ddd;
+                }
+            }
+        }
+    }
+
+    .psarfw-btn {
+        display: inline-block;
+        padding: 12px 20px;
+        background: var(--primary-color);;
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.2;
+        border: 1px solid var(--primary-color);;
+        border-radius: 6px;
+        box-shadow: none;
+        outline: none;
+        cursor: pointer;
+        
+        &:not(.psarfw-disabled-btn):hover{
+            background: #fff;
+            color: var(--primary-color);;
+        }
+        
+        &.psarfw-disabled-btn {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+        &.psarfw-white-btn {
+            color: var(--primary-color);;
+            background: #fff;
+
+            &:hover{
+                background: var(--primary-color);;
+                color: #fff;
+            }
+        }
+    }
+
+    .psarfw-btn-box {
+        gap: 20px;
+    }
+         
+}
